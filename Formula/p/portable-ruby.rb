@@ -80,7 +80,7 @@ class PortableRuby < PortableFormula
     args = portable_configure_args + %W[
       --prefix=#{prefix}
       --enable-load-relative
-      --with-static-linked-ext
+      --enable-shared
       --with-baseruby=#{RbConfig.ruby}
       --with-out-ext=win32,win32ole
       --without-gmp
